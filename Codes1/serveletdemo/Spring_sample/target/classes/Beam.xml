@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<bean id ="FortuneServices" class = "com.stackroute.Spring_sample.randomNumFortune">
+</bean>
+   <bean id = "mycoach" class = "com.stackroute.Spring_sample.VolleyBallCoach">
+     <constructor-arg ref="FortuneServices"></constructor-arg> 
+  
+      <property name ="playerEmail" value="sai@gmail.com"></property>
+      <property name ="teamName" value="Msvteam"></property>
+   </bean>
+ 
+</beans>

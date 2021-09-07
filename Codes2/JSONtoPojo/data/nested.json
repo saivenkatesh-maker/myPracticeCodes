@@ -1,0 +1,14 @@
+{
+   "id": "101",
+   "firstName": "Sai",
+   "lastName": "Venkatesha",
+   "email":"sai@gmail.com",
+   "address": {
+         "street": "Flower Street",
+         "city": "Ballari",
+         "state": "Karnataka",
+         "zip": "583101",
+         "country":"India"
+   },
+   "languages": ["java","#c","python","javascript"]
+   }

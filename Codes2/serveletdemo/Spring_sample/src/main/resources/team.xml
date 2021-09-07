@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+<context:property-placeholder location="classpath:teamDetails.properties"></context:property-placeholder>
+<bean id ="FortuneServices" class = "com.stackroute.Spring_sample.randomNumFortune">
+</bean>
+ <bean id = "mycoach" class = "com.stackroute.Spring_sample.VolleyBallCoach">
+     <constructor-arg ref="FortuneServices"></constructor-arg> 
+  
+      <property name ="playerEmail" value="${sports.playerEmail}"></property>
+      <property name ="teamName" value="${sports.teamName}"></property>
+      </bean>
+</beans>
